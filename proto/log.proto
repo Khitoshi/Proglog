@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package log.v1;
+
+option go_package = "github.com/Khitoshi/Proglog/proto";
+
+message Record {
+    bytes value = 1;
+    uint64 offset = 2;
+}
+
+service LogService {
+    rpc Produce(Record) returns (Record);
+}
