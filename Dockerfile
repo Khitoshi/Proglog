@@ -9,4 +9,6 @@ RUN go mod tidy
 
 COPY ./src/ ./src/
 
+COPY .git/ .git/
+
 CMD ["bash"]
