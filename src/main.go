@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"log"
 
-func main(){
-	fmt.Println("Hello, World!")
+	"github.com/Khitoshi/Proglog/src/server"
+)
+
+func main() {
+	srv := server.NewHTTPServer(":50051")
+	log.Fatal(srv.ListenAndServe())
 }
