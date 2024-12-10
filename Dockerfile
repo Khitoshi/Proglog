@@ -16,9 +16,7 @@ RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v29.1/pro
     
 RUN go mod tidy 
 
-COPY ./src/ ./src/
-
-COPY .git/ .git/
+COPY ./ ./
 
 ENV PATH="/root/go/bin:$PATH"
 
