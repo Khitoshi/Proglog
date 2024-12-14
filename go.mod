@@ -6,6 +6,7 @@ require (
 	github.com/gorilla/mux v1.8.1
 	github.com/stretchr/testify v1.10.0
 	github.com/tysonmote/gommap v0.0.3
+	google.golang.org/protobuf v1.35.2
 )
 
 require (
